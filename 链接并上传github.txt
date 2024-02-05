@@ -1,0 +1,12 @@
+1.下载插件，包括1主机也下载git
+2.在想上传文件的终端输入ssh-keygen,后面会要你输入一个文件的名字，用来保存你的密钥，密码可不填（两次回车）
+3.将你的密钥文件***.pub里面的东西全部复制一份，到github的setting的ssh and GPG key，将你复制值的密钥添加进去
+4.在想上传文件的终端输入git config --global user.name 你github的用户名
+                       git config --global user.email 你github的邮箱
+5.输入git init 初始化
+6.输入git remote add origin in 你的仓库网址
+7.输入git remote set-url origin 仓库网址
+8.输入git add 你要上传的文件名字 
+9.git commit -m "注释"
+10.git branch -M test1  (创建分支)
+11.git push -u origin 分支名
